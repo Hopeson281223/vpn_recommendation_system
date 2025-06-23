@@ -1,0 +1,330 @@
+ERROR:root:Error in recommendation: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\data\\processed\\cleaned_vpn_data.csv'
+ERROR:root:Error in recommendation: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\data\\processed\\cleaned_vpn_data.csv'
+ERROR:root:Error in recommendation: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\data\\processed\\cleaned_vpn_data.csv'
+ERROR:root:Error in recommendation: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\data\\processed\\cleaned_vpn_data.csv'
+INFO:root:\U0001f50d Recommendation request: {'speed': 50.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'Switzerland'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 0, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'no'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 0, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'Switzerland'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'no'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 0, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'no'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 0, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'no'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 6.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'Germany'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 6, 'max_devices': 3, 'trial_available': 'yes', 'logging_policy': 'no_logs', 'encryption': 'AES-256', 'country': 'Germany'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: columns are missing: {'logging_policy', 'encryption'}
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: could not convert string to float: 'yes'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5, 'price': 15, 'max_devices': 1, 'trial_available': 'yes', 'logging_policy': 'partial_logs', 'encryption': 'AES-256', 'country': ''}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'Germany', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 10, 'price': 3, 'max_devices': 3}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'Germany', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 10, 'price': 3, 'max_devices': 3}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'Unknownland', 'trial_available': 'yes', 'encryption': 'Quantum-XYZ', 'logging_policy': 'super_secure_logs', 'speed': 100, 'price': 1, 'max_devices': 20}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'UnknownLand', 'trial_available': 'no', 'encryption': 'RSA-1024', 'logging_policy': 'all_logs', 'speed': 0.1, 'price': 50, 'max_devices': 1}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'UnknownLand', 'trial_available': 'no', 'encryption': 'RSA-1024', 'logging_policy': 'all_logs', 'speed': 0.1, 'price': 50, 'max_devices': 1}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'UnknownLand', 'trial_available': 'no', 'encryption': 'RSA-1024', 'logging_policy': 'all_logs', 'speed': 0.1, 'price': 50, 'max_devices': 1}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'UnknownLand', 'trial_available': 'no', 'encryption': 'RSA-1024', 'logging_policy': 'all_logs', 'speed': 0.1, 'price': 50, 'max_devices': 1}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 3, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 4, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 50.0, 'price': 10.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'partial_logs', 'max_devices': 5, 'country': 'France'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 3.0, 'trial_available': 1, 'encryption': 'Blowfish-256', 'logging_policy': 'partial_logs', 'max_devices': 5, 'country': 'Canada'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: ['encryption']
+INFO:root:\U0001f50d Recommendation request: {'country': 'UnknownLand', 'trial_available': 'no', 'encryption': 'RSA-1024', 'logging_policy': 'all_logs', 'speed': 0.1, 'price': 50, 'max_devices': 1}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: ['encryption']
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: ['encryption']
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'Blowfish-256', 'logging_policy': 'partial_logs', 'max_devices': 5, 'country': 'Canada'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+WARNING:root:\u26a0\ufe0f Internal error. No VPNs matched for input: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+WARNING:root:\u26a0\ufe0f Internal error. No VPNs matched for input: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: 'encryption'
+WARNING:root:\u26a0\ufe0f Internal error. No VPNs matched for input: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c Recommendation error: ['name']
+WARNING:root:\u26a0\ufe0f Internal error. No VPNs matched for input: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f50d Recommendation request: {'country': 'Italy', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 5, 'price': 10, 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 5 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'Switzerland', 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'speed': 70, 'price': 10, 'max_devices': 3}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 5 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 5 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+INFO:root:\u2705 Returning 5 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: could not convert string to float: 'yes'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: could not convert string to float: 'yes'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\models\\enc_country.pkl'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\models\\enc_country.pkl'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\models\\enc_country.pkl'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: [Errno 2] No such file or directory: 'C:\\Users\\1030\\OneDrive\\Desktop\\vpn_recommendation_system\\models\\enc_country.pkl'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: y should be a 1d array, got an array of shape (1, 163) instead.
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- encryption
+Feature names seen at fit time, yet now missing:
+- data_encryption
+- handshake_encryption
+
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+WARNING:root:\u26a0\ufe0f No strong ML matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+WARNING:root:\u26a0\ufe0f No strong ML matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+WARNING:root:\u26a0\ufe0f Low confidence matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+ERROR:root:\u274c ML prediction error: could not convert string to float: 'yes'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'France', 'trial_available': 'no', 'encryption': 'Blowfish-128', 'logging_policy': 'partial_logs', 'speed': 40, 'price': 5, 'max_devices': 2}
+WARNING:root:\u26a0\ufe0f Low confidence matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+ERROR:root:\u274c ML prediction error: y contains previously unseen labels: 'aes-256'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'USA', 'trial_available': 'yes', 'encryption': 'aes-256', 'logging_policy': 'no_logs', 'speed': 50, 'price': 5, 'max_devices': 2}
+ERROR:root:\u274c ML prediction error: y contains previously unseen labels: 'aes-256'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'country': 'USA', 'trial_available': 'yes', 'encryption': 'aes-256', 'logging_policy': 'no_logs', 'speed': 50, 'price': 5, 'max_devices': 2}
+INFO:root:\u2705 Returning 5 recommendations.
+WARNING:root:\u26a0\ufe0f Low confidence matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+ERROR:root:\u274c ML prediction error: 'data_encryption'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+INFO:root:\U0001f50d Recommendation request: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+WARNING:root:\u26a0\ufe0f No strong ML matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+WARNING:root:\u26a0\ufe0f No strong ML matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+INFO:root:\U0001f50d Recommendation request: {'speed': 50.0, 'price': 6.0, 'trial_available': 0, 'encryption': 'RSA-2048', 'logging_policy': '', 'max_devices': 5, 'country': 'Switzerland'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: y contains previously unseen labels: 'RSA-2048'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'speed': 50.0, 'price': 6.0, 'trial_available': 0, 'encryption': 'RSA-2048', 'logging_policy': '', 'max_devices': 5, 'country': 'Switzerland'}
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-128', 'logging_policy': 'no_logs', 'max_devices': 7, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+ERROR:root:\u274c ML prediction error: y contains previously unseen labels: 'AES-128'
+WARNING:root:\u26a0\ufe0f Model prediction error. No VPNs matched for input: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-128', 'logging_policy': 'no_logs', 'max_devices': 7, 'country': 'USA'}
+INFO:root:\U0001f50d Recommendation request: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5, 'country': 'USA'}
+INFO:root:\U0001f4ca Dataset loaded: 163 VPNs
+WARNING:root:\u26a0\ufe0f No strong ML matches. Falling back to speed/price.
+INFO:root:\u2705 Returning 3 recommendations.
+2025-06-23 21:32:18,592 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:32:18,592 - INFO - User inputs: {'speed': 5.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5, 'country': 'USA'}
+2025-06-23 21:32:18,614 - ERROR - Recommendation failed: Length of values (1) does not match length of index (163)
+Traceback (most recent call last):
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\recommender\recommend.py", line 71, in recommend_vpn
+    df['base_score'] = model.predict_proba(X_input)[:, 1] * 100
+    ~~^^^^^^^^^^^^^^
+  File "c:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 4316, in __setitem__
+    self._set_item(key, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "c:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 4529, in _set_item
+    value, refs = self._sanitize_column(value)
+                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "c:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 5273, in _sanitize_column
+    com.require_length_match(value, self.index)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\common.py", line 573, in require_length_match
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Length of values (1) does not match length of index (163)
+2025-06-23 21:32:54,472 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:32:54,472 - INFO - User inputs: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+2025-06-23 21:32:54,495 - ERROR - Recommendation failed: Length of values (1) does not match length of index (163)
+Traceback (most recent call last):
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\recommender\recommend.py", line 71, in recommend_vpn
+    df['base_score'] = model.predict_proba(X_input)[:, 1] * 100
+    ~~^^^^^^^^^^^^^^
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 4316, in __setitem__
+    self._set_item(key, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 4529, in _set_item
+    value, refs = self._sanitize_column(value)
+                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\frame.py", line 5273, in _sanitize_column
+    com.require_length_match(value, self.index)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\common.py", line 573, in require_length_match
+    raise ValueError(
+    ...<4 lines>...
+    )
+ValueError: Length of values (1) does not match length of index (163)
+2025-06-23 21:35:16,324 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:35:16,324 - INFO - User inputs: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+2025-06-23 21:35:16,337 - ERROR - Recommendation failed: could not convert string to float: 'AES-256'
+Traceback (most recent call last):
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\recommender\recommend.py", line 88, in recommend_vpn
+    score = model.predict_proba(comparison_row)[0, 1] * 100
+            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        self,
+    ...<4 lines>...
+        ensure_all_finite=ensure_all_finite,
+    )
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\sklearn\utils\_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "C:\Users\1030\OneDrive\Desktop\vpn_recommendation_system\.venv\Lib\site-packages\pandas\core\generic.py", line 2168, in __array__
+    arr = np.asarray(values, dtype=dtype)
+ValueError: could not convert string to float: 'AES-256'
+2025-06-23 21:40:59,658 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:40:59,659 - INFO - User inputs: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+2025-06-23 21:41:02,563 - WARNING - Using hybrid fallback scoring
+2025-06-23 21:41:02,576 - INFO - Returning 5 recommendations
+2025-06-23 21:51:14,602 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:51:14,602 - INFO - User inputs: {'speed': 100, 'price': 5, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 5}
+2025-06-23 21:51:18,065 - WARNING - Using hybrid fallback scoring
+2025-06-23 21:51:18,081 - INFO - Returning 5 recommendations
+2025-06-23 21:52:17,674 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:52:17,675 - INFO - User inputs: {'speed': 50.0, 'price': 5.0, 'trial_available': 1, 'encryption': 'AES-256', 'logging_policy': 'full_logs', 'max_devices': 5, 'country': 'Italy'}
+2025-06-23 21:52:17,680 - WARNING - Encoding error: y contains previously unseen labels: 'full_logs'. Using defaults
+2025-06-23 21:52:21,348 - WARNING - Using hybrid fallback scoring
+2025-06-23 21:52:21,363 - INFO - Returning 5 recommendations
+2025-06-23 21:54:19,470 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:54:19,470 - INFO - User inputs: {'speed': 5.0, 'price': 5.0, 'trial_available': 0, 'encryption': 'AES-128', 'logging_policy': 'partial_logs', 'max_devices': 2, 'country': 'Sweden'}
+2025-06-23 21:54:19,474 - WARNING - Encoding error: y contains previously unseen labels: 'AES-128'. Using defaults
+2025-06-23 21:54:23,111 - INFO - Returning 10 recommendations
+2025-06-23 21:57:38,211 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 21:57:38,211 - INFO - User inputs: {'speed': 6.67, 'price': 5.0, 'trial_available': 'yes', 'encryption': 'AES-256', 'logging_policy': 'no_logs', 'max_devices': 6, 'country': 'United States'}
+2025-06-23 21:57:41,005 - WARNING - Using hybrid fallback scoring
+2025-06-23 21:57:41,022 - INFO - Returning 5 recommendations
+2025-06-23 22:03:31,692 - INFO - Loaded 163 VPNs for recommendation
+2025-06-23 22:03:31,692 - INFO - User inputs: {'speed': 100.0, 'price': 10.0, 'trial_available': 0, 'encryption': 'Blowfish-256', 'logging_policy': 'no_logs', 'max_devices': 25, 'country': 'Hong Kong'}
+2025-06-23 22:03:31,697 - WARNING - Encoding error: y contains previously unseen labels: 'Blowfish-256'. Using defaults
+2025-06-23 22:03:35,422 - INFO - Returning 10 recommendations
