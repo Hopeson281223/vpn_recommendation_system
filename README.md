@@ -12,22 +12,26 @@ An AI-powered system to recommend VPN services based on speed, price, encryption
 
 ## Setup Instructions
 1. Clone the Repository
+
    """bash"""
     
     git clone https://github.com/Hopeson281223/vpn_recommendation_system.git
     cd vpn_recommendation_system
 
 2. Install Dependencies
+
    """bash"""
 
    pip install -r requirements.txt"
 
 3. Train the Recommendation Model
+
     """bash"""
 
     python models/train_model.py
 
 4. Run the Web App
+
     """bash"""
 
     uvicorn app.main:app --reload
