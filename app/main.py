@@ -49,8 +49,6 @@ class VPNRecommendationRequest(BaseModel):
 async def startup_event():
     """Initialize application resources"""
     logger.info("Starting VPN Recommender application")
-    # You could pre-load models here if they're large
-    # Example: load('models/model.pkl')
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -150,8 +148,6 @@ async def get_recommendations(
         for r in recommendations:
             raw = r.get("country", "")
             r["country_display"] = country_display_map.get(raw, raw)
-
-
 
         return templates.TemplateResponse("index.html", {
             "request": request,

@@ -77,7 +77,7 @@ def train():
     
     # Save model and print accuracy
     dump(model, os.path.join(model_dir, 'model.pkl'))
-    print(f"✅ Model trained. Accuracy: {model.score(X_test, y_test):.2f}")
+    print(f"Model trained. Accuracy: {model.score(X_test, y_test):.2f}")
     print(f"Features used: {available_features}")
 
 if __name__ == "__main__":

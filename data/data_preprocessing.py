@@ -10,17 +10,17 @@ geolocator = Nominatim(user_agent="vpn_cleaner")
 logging_classifier = pipeline("text-classification", model="distilbert-base-uncased")
 
 def load_and_clean_data(input_path, output_path):
-    print(f"📂 Loading data from {input_path}")
+    print(f"Loading data from {input_path}")
     df = pd.read_csv(input_path)
     
     try:
         df.columns = df.columns.str.strip().str.upper()
         df_cleaned = clean_vpn_data(df)
         df_cleaned.to_csv(output_path, index=False)
-        print(f"✅ Saved cleaned data to {output_path} ({len(df_cleaned)} records)")
+        print(f"Saved cleaned data to {output_path} ({len(df_cleaned)} records)")
         return df_cleaned
     except Exception as e:
-        print(f"❌ Error cleaning data: {str(e)}")
+        print(f"Error cleaning data: {str(e)}")
         raise
 
 def ai_standardize_country(country):
