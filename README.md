@@ -44,7 +44,7 @@ An AI-powered system to recommend VPN services based on speed, price, encryption
     │   ├── main.py            # Main entry point for the API
     │   ├── templates/         # Jinja2 templates for HTML pages
     │   └── static/            # CSS or JavaScript files
-
+    │
     ├── data/                       #Raw and Cleaned VPN dataset
     │   ├── data_preprocessing.py         
     │  
