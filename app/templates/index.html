@@ -2,134 +2,11 @@
 <html>
 <head>
   <title>VPN Recommender</title>
-    <style>
-    :root {
-      --primary: #4361ee;
-      --primary-dark: #3f37c9;
-      --error: #f72585;
-      --success: #28a745;
-      --light: #f8f9fa;
-      --border: #ddd;
-      --text: #333;
-    }
-    
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.5;
-      color: var(--text);
-      background: #f5f7fa;
-      padding: 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    h2 {
-      color: var(--primary);
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    
-    #vpnForm {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-    
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-    }
-    
-    input, select {
-      width: 100%;
-      padding: 0.5rem;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    input:focus, select:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
-    }
-    
-    .error {
-      color: var(--error);
-      font-size: 0.8rem;
-      margin-top: 0.25rem;
-    }
-    
-    button {
-      background: var(--primary);
-      color: white;
-      border: none;
-      padding: 0.75rem;
-      border-radius: 4px;
-      font-size: 1rem;
-      width: 100%;
-      font-weight: 500;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background: var(--primary-dark);
-    }
-    
-    #results {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    #results h3 {
-      color: var(--primary);
-      margin-top: 0;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-    
-    #results ul {
-      padding: 0;
-      list-style: none;
-    }
-    
-    #results li {
-      background: var(--light);
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 4px;
-      border-left: 3px solid var(--primary);
-    }
-    
-    .form-row {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    
-    .form-row > div {
-      flex: 1;
-    }
-    
-    @media (max-width: 600px) {
-      .form-row {
-        flex-direction: column;
-        gap: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
   <h2>VPN Recommender</h2>
   <form id="vpnForm" method="post" action="/recommend" novalidate>
-
     <div class="form-row">
       <div class="form-group">
         <label for="speed">Speed (Mbps)</label>
@@ -148,7 +25,7 @@
       <div class="form-group">
         <label for="max_devices">Max Devices</label>
         <input id="max_devices" name="max_devices" type="number" min="1" max="100" required>
-        <div id="devicesError" class="error"></div>
+        <div id="max_devicesError" class="error"></div>
       </div>
       
       <div class="form-group">
@@ -158,7 +35,7 @@
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
-        <div id="trialError" class="error"></div>
+        <div id="trial_availableError" class="error"></div>
       </div>
     </div>
 
@@ -169,9 +46,8 @@
           <option value="">-- Select --</option>
           <option value="no_logs">No Logs</option>
           <option value="partial_logs">Partial Logs</option>
-          <option value="full_logs">Full Logs</option>
         </select>
-        <div id="loggingError" class="error"></div>
+        <div id="logging_policyError" class="error"></div>
       </div>
       
       <div class="form-group">
@@ -198,49 +74,50 @@
       <label for="country">Country</label>
       <select id="country" name="country" required>
         <option value="">-- Select Country --</option>
-        <option value="Switzerland">Switzerland</option>
+        <option value="">-- Select Country --</option>
+        <option value="Schweiz/Suisse/Svizzera/Svizra">Switzerland</option>
         <option value="USA">USA</option>
         <option value="France">France</option>
-        <option value="Italy">Italy</option>
-        <option value="UK">UK</option>
-        <option value="Seychelles">Seychelles</option>
-        <option value="Czech Republic">Czech Republic</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Hong Kong">Hong Kong</option>
+        <option value="Italia">Italy</option>
+        <option value="United Kingdom">UK</option>
+        <option value="Sesel">Seychelles</option>
+        <option value="Česko">Czech Republic</option>
+        <option value="Sverige">Sweden</option>
+        <option value="Danmark">Denmark</option>
+        <option value="中国">Hong Kong</option>
         <option value="Canada">Canada</option>
-        <option value="Hungary">Hungary</option>
+        <option value="Magyarország">Hungary</option>
         <option value="Moldova">Moldova</option>
         <option value="Australia">Australia</option>
-        <option value="Germany">Germany</option>
-        <option value="Iceland">Iceland</option>
-        <option value="Romania">Romania</option>
-        <option value="Panama">Panama</option>
-        <option value="Northern Cyprus">Northern Cyprus</option>
+        <option value="Deutschland">Germany</option>
+        <option value="Ísland">Iceland</option>
+        <option value="România">Romania</option>
+        <option value="Panamá">Panama</option>
+        <option value="Κύπρος - Kıbrıs">Cyprus</option>
         <option value="British Virgin Islands">British Virgin Islands</option>
-        <option value="Cyprus">Cyprus</option>
-        <option value="Malaysia">Malaysia</option>
-        <option value="Finland">Finland</option>
+        <option value="Malaysia مليسيا">Malaysia</option>
+        <option value="Suomi / Finland">Finland</option>
         <option value="Belize">Belize</option>
         <option value="Gibraltar">Gibraltar</option>
         <option value="Singapore">Singapore</option>
-        <option value="Bosnia">Bosnia</option>
-        <option value="Norway">Norway</option>
-        <option value="British Indian Ocean">British Indian Ocean</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Taiwan">Taiwan</option>
-        <option value="Morocco">Morocco</option>
-        <option value="Mauritius">Mauritius</option>
+        <option value="Bosna i Hercegovina / Босна и Херцеговина">Bosnia</option>
+        <option value="Norge">Norway</option>
+        <option value="British Indian Ocean Territory">British Indian Ocean</option>
+        <option value="Nederland">Netherlands</option>
+        <option value="Éire / Ireland">Ireland</option>
+        <option value="臺灣">Taiwan</option>
+        <option value="Maroc ⵍⵎⵖⵔⵉⴱ المغرب">Morocco</option>
+        <option value="Mauritius / Maurice">Mauritius</option>
         <option value="India">India</option>
-        <option value="Slovakia">Slovakia</option>
+        <option value="Slovensko">Slovakia</option>
         <option value="Barbados">Barbados</option>
-        <option value="Japan">Japan</option>
-        <option value="Poland">Poland</option>
+        <option value="日本">Japan</option>
+        <option value="Polska">Poland</option>
         <option value="Malta">Malta</option>
-        <option value="Bulgaria">Bulgaria</option>
-        <option value="Israel">Israel</option>
-        <option value="UAE">UAE</option>
+        <option value="България">Bulgaria</option>
+        <option value="ישראל">Israel</option>
+        <option value="الإمارات العربية المتحدة">UAE</option>
+
       </select>
       <div id="countryError" class="error"></div>
     </div>
@@ -249,140 +126,66 @@
   </form>
 
   {% if results %}
-  <div id="results">
-    <h3>Top Recommended VPNs</h3>
-    <ul>
-      {% for vpn in results %}
-        {% if vpn.score > 0 %}
-          <li>
-            <strong>{{ vpn.vpn_name }}</strong>
-            <div>Score: {{ vpn.score | round(3) }}</div>
-            <div>Price: ${{ "%.2f"|format(vpn.price) }}</div>
-            <div>Country: {{ vpn.country }}</div>
-            <div>Logging Policy: {{ vpn.logging_policy }}</div>
-            <div>Encryption: {{ vpn.encryption }}</div>
-            <div>Max Devices: {{ vpn.max_devices }}</div>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    {% if results|selectattr('score', '>', 0)|list|length == 0 %}
-      <p>No close matches found. Try relaxing some requirements.</p>
-    {% endif %}
+<div id="results">
+  <h3>Top VPN Recommendations</h3>
+  
+  {% for vpn in results %}
+  <div class="vpn-card">
+    <div class="vpn-header">
+      <div>
+        <span class="vpn-name">{{ vpn.vpn_name }}</span>
+        <span class="vpn-country">{{ vpn.country_display }}</span>
+      </div>
+      <div class="vpn-score">{{ "%.1f"|format(vpn.personalized_score) }}/100</div>
+    </div>
+    
+    <div class="vpn-details">
+      <div class="vpn-detail">
+        <div class="detail-label">Price</div>
+        <div class="detail-value price-value">${{ "%.2f"|format(vpn.price) }}/mo</div>
+      </div>
+      
+      <div class="vpn-detail">
+        <div class="detail-label">Speed</div>
+        <div class="detail-value">
+          {{ "%.1f"|format(vpn.speed) }} Mbps
+          <div class="speed-bar" style="width: {{ vpn.speed * 10 }}%"></div>
+        </div>
+      </div>
+      
+      <div class="vpn-detail">
+        <div class="detail-label">Security</div>
+        <div class="detail-value">
+          {{ vpn.encryption }}
+        </div>
+      </div>
+      
+      <div class="vpn-detail">
+        <div class="detail-label">Privacy</div>
+        <div class="detail-value {% if vpn.logging_policy == 'no_logs' %}no-logs{% else %}partial-logs{% endif %}">
+          {{ vpn.logging_policy|replace('_', ' ')|title }}
+        </div>
+      </div>
+      
+      <div class="vpn-detail">
+        <div class="detail-label">Devices</div>
+        <div class="detail-value">
+          {{ vpn.max_devices }}
+        </div>
+      </div>
+      
+      <div class="vpn-detail">
+        <div class="detail-label">Free Trial</div>
+        <div class="detail-value">
+          {{ vpn.trial_available|title }}
+        </div>
+      </div>
+    </div>
   </div>
+  {% endfor %}
+</div>
 {% endif %}
 
-  <script>
-document.getElementById('vpnForm').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    
-    // Clear previous errors
-    document.querySelectorAll('.error').forEach(el => el.textContent = '');
-    const errorContainer = document.getElementById('formError');
-    if (errorContainer) errorContainer.textContent = '';
-    
-    let isValid = true;
-    const form = this;
-    const formData = new FormData(form);
-
-    // Validate numeric fields
-    const numericFields = [
-        { id: 'speed', min: 1, max: 1000, message: 'Please enter a speed between 1 and 1000 Mbps' },
-        { id: 'price', min: 0, max: 100, message: 'Please enter a price between $0 and $100' },
-        { id: 'max_devices', min: 1, max: 100, message: 'Please enter a number between 1 and 100' }
-    ];
-
-    numericFields.forEach(field => {
-        const element = document.getElementById(field.id);
-        const value = parseFloat(element.value);
-        
-        if (isNaN(value) || value < field.min || value > field.max) {
-            document.getElementById(`${field.id}Error`).textContent = field.message;
-            isValid = false;
-            if (isValid === false) element.focus();
-        }
-    });
-
-    // Validate dropdowns
-    const requiredSelects = ['logging_policy', 'encryption', 'trial_available', 'country'];
-    requiredSelects.forEach(id => {
-        const select = document.getElementById(id);
-        if (!select.value) {
-            document.getElementById(`${id}Error`).textContent = 'This field is required';
-            isValid = false;
-            if (isValid === false) select.focus();
-        }
-    });
-
-    if (!isValid) {
-        // Scroll to first error
-        const firstError = document.querySelector('.error:not(:empty)');
-        if (firstError) {
-            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        return false;
-    }
-
-    // Show loading state
-    const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="spinner"></span> Processing...';
-
-    try {
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'text/html'
-            }
-        });
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const html = await response.text();
-        document.body.innerHTML = html;
-    } catch (error) {
-        console.error('Error:', error);
-        const errorContainer = document.createElement('div');
-        errorContainer.id = 'formError';
-        errorContainer.className = 'error';
-        errorContainer.textContent = 'An error occurred while processing your request. Please try again.';
-        form.insertBefore(errorContainer, form.firstChild);
-    } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Get VPN Recommendations';
-    }
-});
-
-// Add input validation on blur
-document.getElementById('speed').addEventListener('blur', function() {
-    const value = parseFloat(this.value);
-    if (isNaN(value) || value < 1 || value > 1000) {
-        document.getElementById('speedError').textContent = 'Please enter a speed between 1 and 1000 Mbps';
-    } else {
-        document.getElementById('speedError').textContent = '';
-    }
-});
-
-document.getElementById('price').addEventListener('blur', function() {
-    const value = parseFloat(this.value);
-    if (isNaN(value) || value < 0 || value > 100) {
-        document.getElementById('priceError').textContent = 'Please enter a price between $0 and $100';
-    } else {
-        document.getElementById('priceError').textContent = '';
-    }
-});
-
-document.getElementById('max_devices').addEventListener('blur', function() {
-    const value = parseInt(this.value);
-    if (isNaN(value) || value < 1 || value > 100) {
-        document.getElementById('devicesError').textContent = 'Please enter a number between 1 and 100';
-    } else {
-        document.getElementById('devicesError').textContent = '';
-    }
-});
-</script>
+  <script src="/static/js/scripts.js"></script>
 </body>
 </html>

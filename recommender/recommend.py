@@ -1,170 +1,156 @@
 import os
 import pandas as pd
-from joblib import load
-import logging
 import numpy as np
+from joblib import load
+from sklearn.linear_model import SGDClassifier
+from sklearn.preprocessing import LabelEncoder
 
-# Set up logging
-logging.basicConfig(
-    filename='vpn_recommendations.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+class PreferenceLearner:
+    def __init__(self):
+        self.model = SGDClassifier(loss='log_loss', warm_start=True)
+        self.features = ['price', 'speed', 'logging_policy', 'trial_available']
+        # Initialize with dummy data
+        dummy_X = [[0, 0, 0, 0]]
+        dummy_y = [0]
+        self.model.partial_fit(dummy_X, dummy_y, classes=[0, 1])
+    
+    def update(self, user_feedback):
+        """Learn from user feedback"""
+        X = pd.DataFrame([user_feedback['features']])
+        y = [user_feedback['rating']]
+        self.model.partial_fit(X, y)
+    
+    def get_weights(self):
+        """Get feature weights"""
+        return np.abs(self.model.coef_[0]) if hasattr(self.model, 'coef_') else np.ones(len(self.features))
 
-def recommend_vpn(inputs: dict):
-    """Recommend VPNs based on user inputs using ML model with proper scoring"""
-    try:
-        base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        model_path = os.path.join(base, 'models', 'model.pkl')
-        data_path = os.path.join(base, 'data', 'cleaned_vpn_data.csv')
+def recommend_vpn(inputs):
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    model = load(os.path.join(base, 'models', 'model.pkl'))
+    df = pd.read_csv(os.path.join(base, 'data', 'cleaned_vpn_data.csv'))
+    
+    # Fill missing encryption data
+    encryption_defaults = {
+        'encryption': 'AES-256',
+        'default_encryption': 'AES-256',
+        'strongest_encryption': 'AES-256',
+        'handshake_encryption': 'RSA-4096'
+    }
+    for col, default in encryption_defaults.items():
+        if col in df.columns:
+            df[col] = df[col].replace(['Unknown', 'nan', '', None], default).fillna(default)
 
-        # Load model and data
-        model = load(model_path)
-        df = pd.read_csv(data_path)
-        
-        # Standardize column names
-        df.rename(columns={'name': 'vpn_name'}, inplace=True)
-        df = df.dropna(subset=['vpn_name'])
-        
-        if df.empty:
-            return create_empty_result(inputs, reason="Dataset is empty")
-
-        logging.info(f"Loaded {len(df)} VPNs for recommendation")
-        logging.info(f"User inputs: {inputs}")
-
-        # Load encoders
-        enc_encryption = load(os.path.join(base, 'models', 'enc_encryption.pkl'))
-        enc_logging = load(os.path.join(base, 'models', 'enc_logging.pkl'))
-        enc_handshake = load(os.path.join(base, 'models', 'enc_handshake.pkl'))
-
-        # Validate and prepare user input features
+    if df.empty:
+        return pd.DataFrame(columns=['vpn_name', 'country', 'score'])
+    
+    # Initialize PreferenceLearner
+    learner = PreferenceLearner()
+    
+    # Load encoders with fallbacks
+    encoder_files = [
+        'country', 'logging_policy', 'encryption', 
+        'default_encryption', 'strongest_encryption', 
+        'handshake_encryption'
+    ]
+    encoders = {}
+    for col in encoder_files:
         try:
-            user_features = {
-                'speed': float(inputs.get('speed', 0)),
-                'price': float(inputs.get('price', 100)),
-                'trial_available': 1 if str(inputs.get('trial_available', 'no')).lower() in ['yes', '1'] else 0,
-                'data_encryption': inputs.get('encryption', 'AES-256'),
-                'handshake_encryption': inputs.get('handshake_encryption', 'RSA-4096'),
-                'logging_policy': inputs.get('logging_policy', 'no_logs'),
-                'max_devices': int(inputs.get('max_devices', 1))
-            }
-        except ValueError as e:
-            logging.error(f"Invalid input format: {str(e)}")
-            return create_empty_result(inputs, reason=f"Invalid input format: {str(e)}")
+            encoders[col] = load(os.path.join(base, 'models', f'enc_{col}.pkl'))
+        except:
+            encoders[col] = LabelEncoder().fit(['Unknown'])
 
-        # Encode categorical features for user inputs
+    # Process user inputs with defaults
+    user_features = {
+        'speed': float(inputs.get('speed', 5)),
+        'price': float(inputs.get('price', 10)),
+        'trial_available': 1 if str(inputs.get('trial_available', 'no')).lower() == 'yes' else 0,
+        'max_devices': int(inputs.get('max_devices', 1)),
+        'encryption': inputs.get('encryption', 'AES-256'),
+        'logging_policy': inputs.get('logging_policy', 'no_logs'),
+        'country': inputs.get('country', '').strip(),
+        'default_encryption': inputs.get('default_encryption', 'AES-256'),
+        'strongest_encryption': inputs.get('strongest_encryption', 'AES-256'),
+        'handshake_encryption': inputs.get('handshake_encryption', 'RSA-4096')
+    }
+
+    # Safe encoding function
+    def safe_encode(encoder, value):
         try:
-            user_features['data_encryption'] = enc_encryption.transform([user_features['data_encryption']])[0]
-            user_features['handshake_encryption'] = enc_handshake.transform([user_features['handshake_encryption']])[0]
-            user_features['logging_policy'] = enc_logging.transform([user_features['logging_policy']])[0]
-        except ValueError as e:
-            logging.warning(f"Encoding error: {str(e)}. Using defaults")
-            user_features['data_encryption'] = enc_encryption.transform(['AES-256'])[0]
-            user_features['handshake_encryption'] = enc_handshake.transform(['RSA-4096'])[0]
-            user_features['logging_policy'] = enc_logging.transform(['no_logs'])[0]
+            if value in encoder.classes_:
+                return encoder.transform([value])[0]
+            return encoder.transform(['Unknown'])[0]
+        except:
+            return 0
 
-        # Encode categorical features in the DataFrame
-        try:
-            df['data_encryption'] = enc_encryption.transform(df['data_encryption'])
-            df['handshake_encryption'] = enc_handshake.transform(df['handshake_encryption'])
-            df['logging_policy'] = enc_logging.transform(df['logging_policy'])
-        except ValueError as e:
-            logging.error(f"Data encoding failed: {str(e)}")
-            return create_empty_result(inputs, reason="Data encoding failed")
+    # Encode all features
+    for feature in encoder_files:
+        user_features[f'{feature}_encoded'] = safe_encode(encoders[feature], user_features.get(feature, 'Unknown'))
 
-        # Create input DataFrame with proper feature order
-        feature_order = [
-            'speed', 'price', 'trial_available', 
-            'data_encryption', 'handshake_encryption',
-            'logging_policy', 'max_devices'
-        ]
-        
-        # Calculate scores for each VPN
-        scores = []
-        for _, row in df.iterrows():
-            comparison_row = pd.DataFrame([{
-                'speed': (user_features['speed'] + row['speed']) / 2,
-                'price': (user_features['price'] + row['price']) / 2,
-                'trial_available': user_features['trial_available'],
-                'data_encryption': row['data_encryption'],
-                'handshake_encryption': row['handshake_encryption'],
-                'logging_policy': row['logging_policy'],
-                'max_devices': (user_features['max_devices'] + row['max_devices']) / 2
-            }])[feature_order]
-            
-            try:
-                score = model.predict_proba(comparison_row)[0, 1] * 100
-                scores.append(score)
-            except Exception as e:
-                logging.warning(f"Prediction failed for VPN {row['vpn_name']}: {str(e)}")
-                scores.append(0)
-
-        df['score'] = scores
-
-        # Calculate feature similarity adjustments
-        df['speed_sim'] = 1 - np.abs(df['speed'] - user_features['speed']) / 100
-        df['price_sim'] = 1 - np.minimum(np.abs(df['price'] - user_features['price']) / 50, 1)
-        df['encryption_sim'] = (df['data_encryption'] == user_features['data_encryption']).astype(int)
-        df['logging_sim'] = (df['logging_policy'] == user_features['logging_policy']).astype(int)
-
-        # Combine scores with weights
-        df['score'] = (
-            df['score'] * 0.6 +
-            df['speed_sim'] * 0.15 +
-            df['price_sim'] * 0.15 +
-            df['encryption_sim'] * 0.05 +
-            df['logging_sim'] * 0.05
-        ).clip(0, 100).round(2)
-
-        # Filter and sort results
-        results = (
-            df.sort_values('score', ascending=False)
-            .head(10)
-            .copy()
+    # Enhanced country handling - don't filter, just score
+    if user_features['country']:
+        df['country_match'] = df['country'].str.lower().apply(
+            lambda x: 1.0 if x == user_features['country'].lower() else 
+                     0.7 if user_features['country'].lower() in x else  # partial match
+                     0.3  # other countries
         )
+    else:
+        df['country_match'] = 0.5  # neutral score when no country specified
 
-        # If no good matches, use hybrid fallback
-        if results.empty or results['score'].max() < 30:
-            logging.warning("Using hybrid fallback scoring")
-            results = (
-                df.sort_values(
-                    ['score', 'speed', 'price'], 
-                    ascending=[False, False, True]
-                )
-                .head(5)
-                .copy()
-            )
-            results['score'] = results['score'].clip(20, 80)
+    # Encode dataframe columns
+    for col in encoder_files:
+        if col in df.columns:
+            df[f'{col}_encoded'] = df[col].apply(lambda x: safe_encode(encoders[col], x))
 
-        # Decode categorical features for output
-        results['trial_available'] = results['trial_available'].map({1: 'yes', 0: 'no'})
-        results['data_encryption'] = enc_encryption.inverse_transform(results['data_encryption'])
-        results['logging_policy'] = enc_logging.inverse_transform(results['logging_policy'])
+    # Feature order must match training
+    feature_order = [
+        'speed', 'price', 'max_devices', 'trial_available',
+        'country_encoded', 'logging_policy_encoded',
+        'encryption_encoded', 'default_encryption_encoded', 
+        'strongest_encryption_encoded', 'handshake_encryption_encoded'
+    ]
 
-        final_results = results[[
-            'vpn_name', 'score', 'price', 'country',
-            'logging_policy', 'trial_available', 'data_encryption', 'max_devices'
-        ]].rename(columns={
-            'trial_available': 'has_trial',
-            'data_encryption': 'encryption'
-        })
+    def calculate_score(row):
+        try:
+            X = pd.DataFrame([[
+                row['speed'],
+                row['price'],
+                row['max_devices'],
+                user_features['trial_available'],
+                user_features['country_encoded'],
+                user_features['logging_policy_encoded'],
+                row['encryption_encoded'],
+                row['default_encryption_encoded'],
+                row['strongest_encryption_encoded'],
+                row['handshake_encryption_encoded']
+            ]], columns=feature_order)
+            return model.predict_proba(X)[0][1] * 100
+        except Exception as e:
+            print(f"Error calculating score: {e}")
+            return 0
 
-        logging.info(f"Returning {len(final_results)} recommendations")
-        return final_results
+    df['base_score'] = df.apply(calculate_score, axis=1)
+    
+    # Apply personalized weights with country consideration
+    weights = learner.get_weights()
+    df['personalized_score'] = (
+        df['base_score'] * 0.6 +  # base model score
+        df['country_match'] * 30 +  # country importance (0-30 points)
+        (1 - np.abs(df['price'] - user_features['price']) / 20 * weights[0] * 100 * 0.2 +
+        (df['speed'] / 10) * weights[1] * 100 * 0.2
+    ))
 
-    except Exception as e:
-        logging.error(f"Recommendation failed: {str(e)}", exc_info=True)
-        return create_empty_result(inputs, reason=f"System error: {str(e)}")
+    # Apply strict filters if specified
+    if user_features['logging_policy'] == 'no_logs':
+        df = df[df['logging_policy'] == 'no_logs']
+    
+    if 'max_devices' in inputs:
+        df = df[df['max_devices'] >= user_features['max_devices']]
 
-def create_empty_result(inputs, reason="No matches found"):
-    return pd.DataFrame([{
-        "vpn_name": "No recommendations available",
-        "score": 0,
-        "price": "-",
-        "country": inputs.get('country', 'Unknown'),
-        "logging_policy": inputs.get('logging_policy', 'N/A'),
-        "has_trial": inputs.get('trial_available', 'N/A'),
-        "encryption": inputs.get('encryption', 'N/A'),
-        "max_devices": "-",
-        "note": reason
-    }])
+    return df.nlargest(5, 'personalized_score')[[
+        'name', 'country', 'price', 'speed', 'base_score', 
+        'logging_policy', 'encryption', 'max_devices', 
+        'trial_available', 'personalized_score'
+    ]].rename(columns={
+        'name': 'vpn_name',
+        'base_score': 'score'
+    })

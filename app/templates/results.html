@@ -2,30 +2,41 @@
 <html>
 <head>
   <title>Top VPN Recommendations</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-  <h2>Your Top VPN Choices</h2>
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Score</th>
-      <th>Price (USD)</th>
-      <th>Logging Policy</th>
-      <th>Encryption</th>
-      <th>Max Devices</th>
-    </tr>
-    {% for r in results %}
+  <h2>Your Top VPN Recommendations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>VPN Name</th>
+        <th>Score</th>
+        <th>Price</th>
+        <th>Country</th>
+        <th>Logging</th>
+        <th>Encryption</th>
+        <th>Devices</th>
+        <th>Trial</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in results %}
       <tr>
         <td>{{ r.vpn_name }}</td>
-        <td>{{ '%0.3f'|format(r.score) }}</td>
-        <td>${{ r.price }}</td>
-        <td>{{ r.logging_policy }}</td>
+        <td class="score-cell">{{ "%.1f"|format(r.personalized_score) }}</td>
+        <td class="price-cell">${{ "%.2f"|format(r.price) }}</td>
+        <td>{{ r.country_display }}</td>
+        <td class="{% if r.logging_policy == 'no_logs' %}no-logs{% else %}partial-logs{% endif %}">
+          {{ r.logging_policy|replace('_', ' ')|title }}
+        </td>
         <td>{{ r.encryption }}</td>
         <td>{{ r.max_devices }}</td>
+        <td>{{ r.trial_available|title }}</td>
       </tr>
-    {% endfor %}
+      {% endfor %}
+    </tbody>
   </table>
-  <br>
-  <a href="/">🔙 Try Again</a>
+  <a href="/" class="back-link">← Try Different Criteria</a>
+  <script src="/static/js/scripts.js"></script>
 </body>
 </html>

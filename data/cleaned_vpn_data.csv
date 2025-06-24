@@ -1,164 +1,164 @@
-name,country,speed,price,max_devices,logging_policy,data_encryption,handshake_encryption,trial_available
-3Monkey,Switzerland,5.0,7.07,1,partial_logs,AES-256,RSA-2048,yes
-AceVPN,United States,5.0,4.59,2,partial_logs,AES-256,RSA-2048,no
-ActiVPN,France,5.0,3.34,5,no_logs,AES-256,RSA-2048,no
-AirVPN,Italy,0.0,4.93,3,no_logs,AES-256,RSA-4096,yes
-Anonine,United Kingdom,5.0,3.99,5,partial_logs,AES-256,RSA-2048,no
-Anonymizer,United States,5.0,6.67,6,no_logs,AES-256,RSA-2048,yes
-AnonymousVPN,Seychelles,5.0,5.75,3,partial_logs,AES-256,RSA-2048,no
-Astrill,Seychelles,0.0,5.83,2,partial_logs,AES-256,RSA-2048,yes
-Autistici / Inventati,Italy,5.0,0.0,25,no_logs,AES-256,RSA-2048,yes
-Avast Secureline,Czech Republic,5.0,6.67,1,partial_logs,AES-256,RSA-2048,yes
-AzireVPN,Sweden,0.0,4.11,5,no_logs,AES-256,RSA-2048,yes
-BeeVPN,Denmark,5.0,7.17,1,no_logs,AES-256,RSA-2048,no
-BlackVPN,Hong Kong,5.691,9.03,3,no_logs,AES-256,RSA-4096,no
-Blockless,Canada,5.0,4.17,1,no_logs,AES-256,RSA-2048,no
-BolehVPN,Seychelles,5.0,6.67,2,no_logs,AES-256,RSA-2048,yes
-Boxpn,Seychelles,0.0,2.99,3,no_logs,AES-256,RSA-2048,no
-BTGuard,United States,5.0,7.5,1,no_logs,AES-256,RSA-2048,no
-Buffered,Hungary,5.0,9.99,5,partial_logs,AES-256,RSA-2048,no
-CactusVPN,Moldova,0.0,4.59,3,no_logs,AES-256,RSA-4096,yes
-Celo,Australia,0.0,5.5,5,partial_logs,AES-256,RSA-2048,yes
-ChillGlobal,Germany,5.0,5.7,1,no_logs,AES-256,RSA-2048,yes
-Cloak,United States,5.0,8.34,25,partial_logs,AES-256,RSA-2048,yes
-CrypticVPN,United States,5.0,2.09,1,no_logs,AES-256,RSA-2048,no
-CryptoHippie,United States,0.0,22.92,1,partial_logs,AES-256,RSA-2048,no
-CryptoStorm,Iceland,0.0,3.92,1,no_logs,AES-256,RSA-2048,yes
-CyberGhost,Romania,5.0,5.84,1,no_logs,AES-256,RSA-2048,no
-DathoVPN,Panama,5.0,6.0,1,no_logs,AES-256,RSA-2048,yes
-DissembleVPN,nan,0.0,0.75,1,no_logs,AES-256,RSA-4096,no
-DotVPN,Hong Kong,5.0,3.0,3,partial_logs,AES-256,RSA-2048,yes
-Doublehop.me,Seychelles,0.0,2.75,1,no_logs,AES-256,RSA-4096,no
-EarthVPN,Northern Cyprus,0.0,3.34,3,no_logs,AES-256,RSA-2048,no
-ExpressVPN,British Virgin Islands,5.0,8.32,3,partial_logs,AES-256,AES-256,no
-Faceless.ME,Cyprus,5.0,5.0,1,partial_logs,AES-256,RSA-2048,yes
-FinchVPN,Malaysia,0.0,3.22,1,partial_logs,AES-256,RSA-2048,yes
-FlowVPN,nan,5.0,3.99,4,partial_logs,AES-256,RSA-2048,yes
-FlyVPN,nan,5.0,6.67,1,partial_logs,AES-256,RSA-2048,yes
-Freedom-IP,nan,5.0,4.58,5,partial_logs,AES-256,RSA-2048,yes
-Freedome,Finland,0.0,4.16,3,no_logs,AES-256,RSA-2048,yes
-FreeVPN Ninja,nan,5.0,0.0,25,no_logs,AES-256,RSA-2048,yes
-FrootVPN,Sweden,5.0,3.0,3,no_logs,AES-256,RSA-2048,no
-FrostVPN,United States,5.0,4.99,3,partial_logs,AES-256,RSA-2048,no
-GetFlix,Canada,5.0,2.77,1,no_logs,AES-256,RSA-2048,yes
-GoTrusted,United States,5.0,5.99,1,partial_logs,AES-256,RSA-2048,yes
-GoVPN,Germany,5.0,2.5,3,partial_logs,AES-256,RSA-2048,yes
-Hide.me,Malaysia,0.0,11.67,5,no_logs,AES-256,RSA-2048,yes
-HideIPVPN,United States,5.0,7.0,3,no_logs,AES-256,RSA-2048,yes
-HideMyAss,United Kingdom,0.0,6.55,2,partial_logs,AES-256,RSA,no
-Hola!VPN,nan,5.0,5.0,1,partial_logs,AES-256,RSA-2048,yes
-Hotspot Shield,Switzerland,5.0,2.5,5,partial_logs,AES-256,RSA-2048,yes
-HotVPN,nan,5.0,8.5,1,no_logs,AES-256,RSA-2048,yes
-IBVPN,Romania,5.0,4.08,1,partial_logs,AES-256,RSA-2048,yes
-In-Disguise,Belize,5.0,6.86,1,no_logs,AES-256,RSA-2048,no
-IncognitoVPN,United States,5.0,12.44,3,partial_logs,AES-256,RSA-2048,no
-Insorg,nan,5.0,15.84,1,no_logs,AES-256,RSA-2048,no
-Integrity.st,Sweden,5.0,5.5,1,no_logs,AES-256,RSA-2048,no
-IntelliVPN,nan,5.0,1.59,1,partial_logs,AES-256,RSA-2048,yes
-Internetz.me,Germany,5.0,7.16,3,no_logs,AES-256,RSA-2048,no
-IPinator,United States,0.0,6.59,5,partial_logs,AES-256,RSA-2048,no
-IPredator,Sweden,5.0,6.56,2,partial_logs,AES-256,RSA-2048,yes
-IPVanish,United States,0.0,6.49,2,no_logs,AES-256,RSA-2048,no
-Ironsocket,Hong Kong,0.0,4.16,3,partial_logs,AES-256,RSA-2048,no
-Ivacy,Hong Kong,5.0,11.95,5,no_logs,AES-256,RSA-2048,no
-IVPN,Gibraltar,0.0,8.34,3,no_logs,AES-256,RSA-4096,yes
-Kepard,Moldova,5.0,2.9,1,no_logs,AES-256,RSA-2048,no
-LeVPN,Hong Kong,5.0,4.95,2,partial_logs,AES-256,RSA-2048,no
-LibertyShield,United Kingdom,5.0,12.43,1,partial_logs,AES-256,RSA-2048,no
-LibertyVPN,United States,5.0,8.99,1,no_logs,AES-256,RSA-2048,no
-LimeVPN,Hong Kong,0.0,11.49,20,partial_logs,AES-256,RSA-2048,no
-LiquidVPN,United States,0.0,5.75,4,no_logs,AES-256,RSA-4096,no
-Lokun,Iceland,5.0,5.5,1,partial_logs,AES-256,RSA-2048,no
-Mullvad,Sweden,0.0,5.44,3,no_logs,AES-256,RSA-2048,yes
-My Expat Network,United Kingdom,1.686,7.0,3,no_logs,Blowfish-128,RSA-2048,no
-MyIP.io,United States,5.0,5.99,1,no_logs,AES-256,RSA-2048,yes
-MyPrivateNetwork,Hong Kong,5.0,7.75,1,partial_logs,AES-256,RSA-2048,no
-MyVPN.Pro,United States,0.0,9.95,1,no_logs,AES-256,RSA-2048,no
-Newshosting,United States,9.312000000000001,8.25,2,no_logs,AES-256,RSA-2048,yes
-NEXTGenVPN,Seychelles,5.0,14.57,1,no_logs,AES-256,RSA-2048,no
-NolimitVPN,Singapore,5.0,3.65,3,partial_logs,AES-256,RSA-2048,yes
-NordVPN,Panama,0.0,4.0,6,no_logs,AES-256,RSA-2048,yes
-NVPN,Bosnia,0.0,3.34,1,no_logs,AES-256,RSA-2048,no
-OctaneVPN,United States,5.0,2.5,5,partial_logs,AES-256,RSA-2048,no
-Opera (Browser) VPN,Norway,5.0,0.0,25,partial_logs,AES-256,RSA-2048,yes
-OverPlay,United Kingdom,5.0,8.33,1,no_logs,AES-256,RSA-2048,no
-oVPN.se,Sweden,0.0,7.61,4,no_logs,AES-256,AES-256,yes
-oVPN.to,nan,0.0,7.3,25,no_logs,AES-256,RSA-4096,no
-Perfect Privacy,Switzerland,5.0,13.68,25,no_logs,AES-256,RSA-4096,no
-PirateParty.ca,Canada,5.0,10.0,1,no_logs,AES-256,RSA-2048,yes
-Private Internet Access,United States,0.0,3.33,5,no_logs,AES-256,RSA-4096,no
-PrivatePackets.io,British Indian Ocean,5.0,5.0,25,no_logs,AES-256,RSA-2048,no
-PrivateTunnel,United States,0.0,2.5,10,no_logs,AES-256,RSA-2048,yes
-PrivateVPN,Sweden,5.0,7.02,4,no_logs,AES-256,AES-256,no
-Privatoria.net,Czech Republic,0.0,1.9,5,no_logs,AES-256,RSA-2048,yes
-ProXPN,Netherlands,5.0,6.25,1,no_logs,AES-256,RSA-2048,yes
-Proxy.sh,Seychelles,0.0,10.0,3,no_logs,AES-256,RSA-4096,no
-PRQ,Sweden,5.0,5.5,1,no_logs,AES-256,RSA-2048,no
-PureVPN,Hong Kong,0.0,4.17,5,partial_logs,AES-256,RSA-2048,no
-RA4W VPN,United States,5.0,1.88,1,no_logs,AES-256,RSA-2048,no
-RiseupVPN,United States,0.0,0.0,25,no_logs,AES-256,RSA-2048,no
-SaferVPN,United States,9.345,8.99,3,partial_logs,Blowfish-128,RSA-2048,yes
-SecureVPN.com,nan,5.0,5.84,5,partial_logs,AES-256,RSA-2048,yes
-SecureVPN.to,nan,0.0,6.84,25,no_logs,AES-256,RSA-4096,no
-SecurityKISS,Ireland,0.0,8.25,1,partial_logs,AES-256,RSA,yes
-Seed4me,Taiwan,5.0,5.5,1,partial_logs,AES-256,RSA-2048,no
-Seedboxes.cc,Cyprus,5.0,14.24,2,no_logs,AES-256,RSA-2048,no
-ShadeYou,Netherlands,5.0,2.17,5,no_logs,AES-256,RSA-2048,yes
-SlickVPN,United States,5.0,4.0,5,no_logs,AES-256,RSA-2048,no
-Smart DNS Proxy,Seychelles,5.0,2.91,5,no_logs,AES-256,RSA-2048,yes
-SmartVPN,Morocco,5.0,6.66,1,partial_logs,AES-256,RSA-2048,no
-Sonic.net,United States,5.0,5.5,1,no_logs,AES-256,RSA-2048,no
-Steganos,Germany,5.0,4.17,1,no_logs,AES-256,RSA-2048,yes
-StrongVPN,United States,5.0,4.99,1,no_logs,AES-256,RSA-2048,no
-SumRando,Mauritius,0.0,10.0,1,partial_logs,AES-256,RSA-2048,yes
-SunVPN,United States,5.0,8.33,2,partial_logs,AES-256,RSA-2048,no
-SuperVPN,United States,0.0,20.0,5,no_logs,AES-256,RSA-2048,yes
-SurfEasy,Canada,5.0,6.49,5,partial_logs,AES-256,RSA-2048,yes
-SwitchVPN,India,5.0,4.95,5,partial_logs,AES-256,RSA-2048,no
-TigerVPN,Slovakia,0.0,7.5,1,partial_logs,AES-256,RSA-2048,no
-Torguard,United States,9.815000000000001,5.0,5,no_logs,Blowfish-128,RSA-2048,no
-TorrentPrivacy,Seychelles,5.0,5.5,1,no_logs,AES-256,RSA-2048,no
-TorVPN,United Kingdom,0.0,2.37,4,partial_logs,AES-256,RSA-4096,yes
-TotalVPN,United States,5.0,5.99,3,partial_logs,AES-256,RSA-2048,yes
-Trust.Zone,Seychelles,0.0,2.99,3,partial_logs,AES-256,RSA-4096,yes
-TunnelBear,Canada,0.0,4.16,5,partial_logs,AES-256,RSA-4096,yes
-Tunnelr,United States,0.0,5.0,5,no_logs,AES-256,RSA-2048,no
-TVWhenAway,United Kingdom,5.0,4.98,1,no_logs,AES-256,RSA-2048,no
-Unblock VPN,Czech Republic,5.0,4.09,1,partial_logs,AES-256,RSA-2048,yes
-Unblock-Us,Barbados,5.0,4.16,1,no_logs,AES-256,RSA-2048,no
-Unlocator,Denmark,5.0,4.17,25,partial_logs,AES-256,RSA-2048,yes
-UnoTelly,Canada,5.0,4.93,1,partial_logs,AES-256,RSA-2048,yes
-Unspyable,United States,5.0,6.67,1,no_logs,AES-256,RSA-4096,no
-VikingVPN,United States,0.0,9.99,1,no_logs,AES-256,RSA-4096,no
-VIP72,nan,5.0,22.09,1,no_logs,AES-256,RSA-2048,no
-VPN Gate,Japan,0.0,0.0,25,partial_logs,AES-256,RSA-2048,yes
-VPN Ghost,Canada,0.0,2.95,2,no_logs,AES-256,RSA-2048,yes
-VPN Land,Canada,5.0,8.34,5,no_logs,AES-256,RSA-2048,no
-VPN Master,United States,5.0,3.95,1,no_logs,AES-256,RSA-2048,no
-VPN Shield,Poland,5.0,2.09,5,partial_logs,AES-256,RSA-2048,yes
-VPN Unlimited,United States,5.0,2.0,5,partial_logs,AES-256,RSA-2048,no
-VPN.ac,Romania,0.0,4.8,6,partial_logs,AES-256,RSA-4096,no
-VPN.Asia,Belize,0.0,5.75,2,no_logs,AES-256,RSA-2048,yes
-VPN.cc,Malta,5.0,6.99,2,no_logs,AES-256,RSA-2048,no
-VPN.ht,Hong Kong,0.0,3.33,3,no_logs,AES-256,RSA-2048,no
-VPN.sh,United Kingdom,5.0,4.28,1,partial_logs,AES-256,RSA-2048,no
-VPN4All,Netherlands,0.0,11.83,1,no_logs,AES-256,RSA-2048,no
-VPNArea,Bulgaria,5.0,4.92,5,no_logs,AES-256,RSA-2048,no
-VPNAUS,Australia,5.0,5.99,1,no_logs,AES-256,RSA-2048,no
-VPNBaron,Romania,5.0,4.99,3,partial_logs,AES-256,RSA-2048,no
-VPNJack,United States,0.0,2.5,1,no_logs,AES-256,AES-256,yes
-VPNMe,United States,5.0,3.34,5,no_logs,AES-256,RSA-2048,no
-VPNSecure,Australia,0.0,7.5,10,no_logs,AES-256,RSA-2048,yes
-VPNShazam,Israel,5.0,6.66,5,partial_logs,AES-256,RSA-2048,no
-VPNTraffic,nan,5.0,2.92,1,no_logs,AES-256,RSA-2048,no
-VPNTunnel,Sweden,5.0,2.99,5,no_logs,AES-256,RSA-2048,no
-VyprVPN,Switzerland,0.0,8.33,2,partial_logs,AES-256,RSA-2048,yes
-WASEL Pro,Netherlands,5.0,7.5,1,no_logs,AES-256,RSA-2048,yes
-WifiMask,Netherlands,0.0,4.52,1,partial_logs,AES-256,RSA-4096,yes
-WindScribe,Canada,0.0,7.5,25,partial_logs,AES-256,RSA-4096,yes
-WiTopia,United States,0.0,5.84,1,partial_logs,AES-256,RSA-2048,no
-WorldVPN,United Kingdom,5.0,4.95,5,partial_logs,AES-256,RSA-2048,yes
-Zenmate,Germany,5.0,6.49,1,partial_logs,AES-256,RSA-2048,yes
-ZoogTV,United Kingdom,5.0,4.68,5,partial_logs,AES-256,RSA-2048,yes
-ZorroVPN,Seychelles,5.589,10.0,3,no_logs,AES-256,RSA-4096,no
-ZPN,United Arab Emirates,5.0,5.99,5,no_logs,AES-256,RSA-2048,yes
+name,country,speed,price,max_devices,logging_policy,encryption,default_encryption,strongest_encryption,handshake_encryption,trial_available
+3Monkey,Schweiz/Suisse/Svizzera/Svizra,5.0,7.07,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+AceVPN,United States,5.0,4.59,2,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+ActiVPN,France,5.0,3.34,5,no_logs,Unknown,Unknown,Unknown,Unknown,no
+AirVPN,Italia,0.0,4.93,3,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+Anonine,United Kingdom,5.0,3.99,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Anonymizer,United States,5.0,6.67,6,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+AnonymousVPN,Sesel,5.0,5.75,3,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Astrill,Sesel,0.0,5.83,2,partial_logs,AES-128,Unknown,AES-128,Unknown,yes
+Autistici / Inventati,Italia,5.0,0.0,25,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+Avast Secureline,Česko,5.0,6.67,1,partial_logs,AES-256,Unknown,AES-256,Unknown,yes
+AzireVPN,Sverige,0.0,4.11,5,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+BeeVPN,Danmark,5.0,7.17,1,no_logs,AES-256,Unknown,AES-256,Unknown,no
+BlackVPN,中国,5.691,9.03,3,no_logs,"AES-256, RSA-4096",AES-256,AES-256,RSA-4096,no
+Blockless,Canada,5.0,4.17,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+BolehVPN,Sesel,5.0,6.67,2,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+Boxpn,Sesel,0.0,2.99,3,no_logs,Blowfish-128,Unknown,Blowfish-128,Unknown,no
+BTGuard,United States,5.0,7.5,1,no_logs,AES-256,Unknown,AES-256,Unknown,no
+Buffered,Magyarország,5.0,9.99,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+CactusVPN,Moldova,0.0,4.59,3,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+Celo,Australia,0.0,5.5,5,partial_logs,AES-256,Unknown,AES-256,Unknown,yes
+ChillGlobal,Deutschland,5.0,5.7,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+Cloak,United States,5.0,8.34,25,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+CrypticVPN,United States,5.0,2.09,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+CryptoHippie,United States,0.0,22.92,1,partial_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,no
+CryptoStorm,Ísland,0.0,3.92,1,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+CyberGhost,România,5.0,5.84,1,no_logs,AES-256,Unknown,AES-256,Unknown,no
+DathoVPN,Panamá,5.0,6.0,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+DissembleVPN,Unknown,0.0,0.75,1,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+DotVPN,中国,5.0,3.0,3,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Doublehop.me,Sesel,0.0,2.75,1,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+EarthVPN,Κύπρος - Kıbrıs,0.0,3.34,3,no_logs,AES-256,Unknown,AES-256,Unknown,no
+ExpressVPN,British Virgin Islands,5.0,8.32,3,partial_logs,"AES-256, CA-4096",Unknown,AES-256,CA-4096,no
+Faceless.ME,Κύπρος - Kıbrıs,5.0,5.0,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+FinchVPN,Malaysia مليسيا,0.0,3.22,1,partial_logs,AES-160,Unknown,AES-160,Unknown,yes
+FlowVPN,Unknown,5.0,3.99,4,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+FlyVPN,Unknown,5.0,6.67,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Freedom-IP,Unknown,5.0,4.58,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Freedome,Suomi / Finland,0.0,4.16,3,no_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,yes
+FreeVPN Ninja,Unknown,5.0,0.0,25,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+FrootVPN,Sverige,5.0,3.0,3,no_logs,Unknown,Unknown,Unknown,Unknown,no
+FrostVPN,United States,5.0,4.99,3,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+GetFlix,Canada,5.0,2.77,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+GoTrusted,United States,5.0,5.99,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+GoVPN,Deutschland,5.0,2.5,3,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Hide.me,Malaysia مليسيا,0.0,11.67,5,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+HideIPVPN,United States,5.0,7.0,3,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+HideMyAss,United Kingdom,0.0,6.55,2,partial_logs,"AES-256, RSA-1024",Unknown,AES-256,RSA-1024,no
+Hola!VPN,Unknown,5.0,5.0,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Hotspot Shield,Schweiz/Suisse/Svizzera/Svizra,5.0,2.5,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+HotVPN,Unknown,5.0,8.5,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+IBVPN,România,5.0,4.08,1,partial_logs,Blowfish-256,Unknown,Blowfish-256,Unknown,yes
+In-Disguise,Belize,5.0,6.86,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+IncognitoVPN,United States,5.0,12.44,3,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Insorg,Unknown,5.0,15.84,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+Integrity.st,Sverige,5.0,10.0,1,no_logs,Blowfish-256,Unknown,Blowfish-256,Unknown,no
+IntelliVPN,Unknown,5.0,1.59,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Internetz.me,Deutschland,5.0,7.16,3,no_logs,AES-256,Unknown,AES-256,Unknown,no
+IPinator,United States,0.0,6.59,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+IPredator,Sverige,5.0,6.56,2,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+IPVanish,United States,0.0,6.49,2,no_logs,AES-256,Unknown,AES-256,Unknown,no
+Ironsocket,中国,0.0,4.16,3,partial_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,no
+Ivacy,中国,5.0,11.95,5,no_logs,Unknown,Unknown,Unknown,Unknown,no
+IVPN,Gibraltar,0.0,8.34,3,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+Kepard,Moldova,5.0,2.9,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+LeVPN,中国,5.0,4.95,2,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+LibertyShield,United Kingdom,5.0,12.43,1,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+LibertyVPN,United States,5.0,8.99,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+LimeVPN,中国,0.0,11.49,20,partial_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,no
+LiquidVPN,United States,0.0,5.75,4,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+Lokun,Ísland,5.0,10.0,1,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Mullvad,Sverige,0.0,5.44,3,no_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,yes
+My Expat Network,United Kingdom,1.686,7.0,3,no_logs,Blowfish-128,Blowfish-128,Unknown,Unknown,no
+MyIP.io,United States,5.0,5.99,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+MyPrivateNetwork,中国,5.0,7.75,1,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+MyVPN.Pro,United States,0.0,9.95,1,no_logs,AES-256,Unknown,AES-256,Unknown,no
+Newshosting,United States,9.312000000000001,8.25,2,no_logs,AES-256,AES-256,AES-256,Unknown,yes
+NEXTGenVPN,Sesel,5.0,14.57,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+NolimitVPN,Singapore,5.0,3.65,3,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+NordVPN,Panamá,0.0,4.0,6,no_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,yes
+NVPN,Bosna i Hercegovina / Босна и Херцеговина,0.0,3.34,1,no_logs,AES-256,Unknown,AES-256,Unknown,no
+OctaneVPN,United States,5.0,2.5,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Opera (Browser) VPN,Norge,5.0,0.0,25,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+OverPlay,United Kingdom,5.0,8.33,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+oVPN.se,Sverige,0.0,7.61,4,no_logs,"AES-256, DH-2048",Unknown,AES-256,DH-2048,yes
+oVPN.to,Unknown,0.0,7.3,25,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+Perfect Privacy,Schweiz/Suisse/Svizzera/Svizra,5.0,13.68,25,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+PirateParty.ca,Canada,5.0,10.0,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+Private Internet Access,United States,0.0,3.33,5,no_logs,RSA-4096,Unknown,Unknown,RSA-4096,no
+PrivatePackets.io,British Indian Ocean Territory,5.0,5.0,25,no_logs,Unknown,Unknown,Unknown,Unknown,no
+PrivateTunnel,United States,0.0,2.5,10,no_logs,Blowfish-128,Unknown,Blowfish-128,Unknown,yes
+PrivateVPN,Sverige,5.0,7.02,4,no_logs,"AES-256, DH-2048",Unknown,AES-256,DH-2048,no
+Privatoria.net,Česko,0.0,1.9,5,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+ProXPN,Nederland,5.0,6.25,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+Proxy.sh,Sesel,0.0,10.0,3,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+PRQ,Sverige,5.0,10.0,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+PureVPN,中国,0.0,4.17,5,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+RA4W VPN,United States,5.0,1.88,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+RiseupVPN,United States,0.0,0.0,25,no_logs,AES-128,Unknown,AES-128,Unknown,no
+SaferVPN,United States,9.345,8.99,3,partial_logs,Blowfish-128,Blowfish-128,Unknown,Unknown,yes
+SecureVPN.com,Unknown,5.0,5.84,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+SecureVPN.to,Unknown,0.0,6.84,25,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+SecurityKISS,Éire / Ireland,0.0,8.25,1,partial_logs,"RSA-1024, Blowfish-128",Unknown,Blowfish-128,RSA-1024,yes
+Seed4me,臺灣,5.0,10.0,1,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Seedboxes.cc,Κύπρος - Kıbrıs,5.0,14.24,2,no_logs,Unknown,Unknown,Unknown,Unknown,no
+ShadeYou,Nederland,5.0,2.17,5,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+SlickVPN,USA,5.0,4.0,5,no_logs,AES-256,Unknown,AES-256,Unknown,no
+Smart DNS Proxy,Sesel,5.0,2.91,5,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+SmartVPN,Maroc ⵍⵎⵖⵔⵉⴱ المغرب,5.0,6.66,1,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+Sonic.net,United States,5.0,10.0,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+Steganos,Deutschland,5.0,4.17,1,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+StrongVPN,United States,5.0,4.99,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+SumRando,Mauritius / Maurice,0.0,10.0,1,partial_logs,AES-128,Unknown,AES-128,Unknown,yes
+SunVPN,United States,5.0,8.33,2,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+SuperVPN,United States,0.0,20.0,5,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+SurfEasy,Canada,5.0,6.49,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+SwitchVPN,India,5.0,4.95,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+TigerVPN,Slovensko,0.0,7.5,1,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+Torguard,United States,9.815000000000001,5.0,5,no_logs,Blowfish-128,Blowfish-128,Unknown,Unknown,no
+TorrentPrivacy,Sesel,5.0,10.0,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+TorVPN,United Kingdom,0.0,2.37,4,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+TotalVPN,United States,5.0,5.99,3,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Trust.Zone,Sesel,0.0,2.99,3,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+TunnelBear,Canada,0.0,4.16,5,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+Tunnelr,USA,0.0,5.0,5,no_logs,AES-256,Unknown,AES-256,Unknown,no
+TVWhenAway,United Kingdom,5.0,4.98,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+Unblock VPN,Česko,5.0,4.09,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Unblock-Us,Barbados,5.0,4.16,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+Unlocator,Danmark,5.0,4.17,25,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+UnoTelly,Canada,5.0,4.93,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Unspyable,United States,5.0,6.67,1,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+VikingVPN,United States,0.0,9.99,1,no_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+VIP72,Unknown,5.0,22.09,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN Gate,日本,0.0,0.0,25,partial_logs,AES-256,Unknown,AES-256,Unknown,yes
+VPN Ghost,Canada,0.0,2.95,2,no_logs,AES-256,Unknown,AES-256,Unknown,yes
+VPN Land,Canada,5.0,8.34,5,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN Master,United States,5.0,3.95,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN Shield,Polska,5.0,2.09,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+VPN Unlimited,United States,5.0,2.0,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN.ac,România,0.0,4.8,6,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,no
+VPN.Asia,Belize,0.0,5.75,2,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+VPN.cc,Malta,5.0,6.99,2,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN.ht,中国,0.0,3.33,3,no_logs,AES-256,Unknown,AES-256,Unknown,no
+VPN.sh,United Kingdom,5.0,4.28,1,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+VPN4All,Nederland,0.0,11.83,1,no_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,no
+VPNArea,България,5.0,4.92,5,no_logs,AES-256,Unknown,AES-256,Unknown,no
+VPNAUS,Australia,5.0,5.99,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPNBaron,România,5.0,4.99,3,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+VPNJack,United States,0.0,2.5,1,no_logs,"MS-CHAP, MPPE",Unknown,MPPE,MS-CHAP,yes
+VPNMe,United States,5.0,3.34,5,no_logs,AES-256,Unknown,AES-256,Unknown,no
+VPNSecure,Australia,0.0,7.5,10,no_logs,"SHA-1160, RSA-2048",Unknown,SHA-1160,RSA-2048,yes
+VPNShazam,ישראל,5.0,6.66,5,partial_logs,Unknown,Unknown,Unknown,Unknown,no
+VPNTraffic,Unknown,5.0,2.92,1,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VPNTunnel,Sverige,5.0,2.99,5,no_logs,Unknown,Unknown,Unknown,Unknown,no
+VyprVPN,Schweiz/Suisse/Svizzera/Svizra,0.0,8.33,2,partial_logs,"AES-256, RSA-2048",Unknown,AES-256,RSA-2048,yes
+WASEL Pro,Nederland,5.0,7.5,1,no_logs,Unknown,Unknown,Unknown,Unknown,yes
+WifiMask,Nederland,0.0,4.52,1,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+WindScribe,Canada,0.0,7.5,25,partial_logs,"AES-256, RSA-4096",Unknown,AES-256,RSA-4096,yes
+WiTopia,United States,0.0,5.84,1,partial_logs,AES-256,Unknown,AES-256,Unknown,no
+WorldVPN,United Kingdom,5.0,4.95,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+Zenmate,Deutschland,5.0,6.49,1,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+ZoogTV,United Kingdom,5.0,4.68,5,partial_logs,Unknown,Unknown,Unknown,Unknown,yes
+ZorroVPN,Sesel,5.589,10.0,3,no_logs,"AES-256, RSA-4096",AES-256,AES-256,RSA-4096,no
+ZPN,الإمارات العربية المتحدة,5.0,5.99,5,no_logs,AES-256,Unknown,AES-256,Unknown,yes
