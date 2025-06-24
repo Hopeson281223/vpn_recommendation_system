@@ -60,6 +60,7 @@ An AI-powered system to recommend VPN services based on speed, price, encryption
     
 ## Example Usage (API)
 Send a POST request to /recommend with parameters:
+
     json
 
     {
